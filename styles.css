@@ -1,0 +1,371 @@
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Palatino, serif;
+    background-image: url("images/white_background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #f8f8f8;
+    z-index: 100;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar_logo_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: #0077B5;
+    border-width: 1.5px;
+    border-style: solid;
+}
+
+.navbar_logo_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar_links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar_links a:hover {
+    color: #666;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+.section_divider {
+    height: 1rem;
+    width: 20%;
+    border-radius: 10px;  
+    background-color: #3f3f3f;
+    margin: 0 auto;
+}
+
+.home {
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social_links img {
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social_links img:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    max-width: 1100px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.about_bio p {
+    font-size: 1.15rem;
+    color: #666;
+    line-height: 2;
+}
+
+.about_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.skill_card, .skill_card_image {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skill_card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #353535;
+}
+
+.skill_card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill_card li {
+    font-size: 0.925rem;
+    color: #666;
+    background: #ffffff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 0.3rem 0.6rem;
+}
+
+.skill_card_image {
+    padding: 0;
+}
+
+.skill_card_image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.experiences, .projects {
+    text-align: center;
+}
+
+.experiences h2, .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.experiences_grid, .projects_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+
+.experience_card, .project_card {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience_card:hover, .project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.experience_card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #353535;
+}
+
+.experience_card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.experience_image, .project_image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.experience_card p, .project_card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.company_logo {
+    width: 7rem;
+    height: 4rem;
+}
+
+.icssc_logo {
+    width: 6rem;
+    height: 4rem;
+}
+
+.github_icon {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.github_icon:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 0.5rem 5rem;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_name h3 {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.footer_socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .social_links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .social_links img {
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.footer .social_links img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .navbar_logo {
+        gap: 0.75rem;
+    }
+    
+    .navbar_logo_image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .navbar_logo_name {
+        font-size: 1rem;
+    }
+    
+    .navbar_links {
+        gap: 1.5rem;
+    }
+    
+    .navbar_links a {
+        font-size: 1rem;
+    }
+
+    .about_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about_bio p {
+        font-size: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .about_skills {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .skill_card h3 {
+        font-size: 1rem;
+    }
+
+    .skill_card ul {
+        font-size: 0.85rem;
+    }
+
+    .skill_card li {
+        font-size: 0.7rem;
+    }
+
+    .skill_card_image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .experiences_grid, .projects_grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .experience_card, .project_card {
+        padding: 1.5rem;
+    }
+}
